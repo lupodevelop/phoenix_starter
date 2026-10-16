@@ -39,7 +39,6 @@ config :arke_server,:mailer_module, PhoenixStarter.Mailer
 config :arke_server, endpoint_module: PhoenixStarterWeb.Endpoint
 
 config :logger,
-       backends: [:console],
        compile_time_purge_matching: [
          [module: Cluster.Logger, level_lower_than: :error]
        ]
