@@ -35,6 +35,9 @@ config :arke_server, ArkeServer.Endpoint, server: false
 
 config :arke_server,:mailer_module, PhoenixStarter.Mailer
 
+# HTTP client for API mail adapters; Req already comes with arke
+config :swoosh, :api_client, Swoosh.ApiClient.Req
+
 # The endpoint module define which servers show in the swagger. You can pass a single one or a list
 config :arke_server, endpoint_module: PhoenixStarterWeb.Endpoint
 
